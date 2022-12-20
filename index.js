@@ -1,7 +1,3 @@
-# nodejs-odev2
-nodejs dersi 2. ödevi
-
-```js
 let arguments = process.argv.slice(2);
 let posts=[{postid:1, post:"hello"},{postid:2, post:"merhaba"}];
 
@@ -15,5 +11,3 @@ async function addPost(newPost){
     posts.push(newPost);
 }
 addPost({postid:arguments[0], post:arguments[1]}).then(listPost()).catch((error)=>console.log(error));
-
-```
